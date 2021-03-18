@@ -40,4 +40,18 @@ public class Radio {
     public void setFM(char newFM) {
         this.FM = newFM;
     }
+    
+    public Radio(double fmFrequency, int amFrequency, char A, char F) {
+        this.fmFrequency = fmFrequency;
+        this.amFrequency = amFrequency;
+        this.AM = A;
+        this.FM = F;
+    }
+    
+    public void printAttributes() {
+        System.out.println("FM frequency: " + this.fmFrequency);
+        System.out.println("AM frequency: " + this.amFrequency);
+        System.out.println("FM: " + this.FM);
+        System.out.println("AM: " + this.AM);
+    }
 }

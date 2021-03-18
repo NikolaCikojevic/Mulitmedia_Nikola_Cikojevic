@@ -12,7 +12,8 @@ public class Main {
         Television rts = new Television(1, 2, false);
         rts.printAttribues();
         
-        
+        Radio bg = new Radio(92.5, 700, 'A', 'F');
+        bg.printAttributes();
     }
     
 }
