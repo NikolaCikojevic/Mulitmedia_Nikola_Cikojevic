@@ -3,6 +3,7 @@ package media;
 
 public class Television {
     
+    
     private int volume = 0;
     private int currentProgram = 1;
     private boolean turnOn = true;
@@ -31,8 +32,16 @@ public class Television {
         this.turnOn = newTurnOn;
         return false;
     }
-
-    public static void main(String[] args) {
+    
+    public Television(int volume, int currentProgram, boolean turnOn) {
+        this.volume = volume;
+        this.currentProgram = currentProgram;
+        this.turnOn = turnOn;
     }
     
+     public void printAttribues() {
+        System.out.println("Volume: " + this.getVolume());
+        System.out.println("Current program: " + this.getCurrentProgram());
+        System.out.println("Turn on/of: " + this.getTurnOn());
+    }
 }
